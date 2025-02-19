@@ -1,5 +1,3 @@
-# Two Sum Problem Solutions
-
 ## Brute Force Solution and Optimise solution 
 
 
