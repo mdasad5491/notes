@@ -5,6 +5,7 @@
  * @param {number} target
  * @return {number[]}
  */
+ 
 var twoSum = function (arr, target) {
     for (var i = 0; i < arr.length; i++) {
         for (var j = 0; j < arr.length; j++) {
@@ -14,6 +15,8 @@ var twoSum = function (arr, target) {
         }
     }
 };
+
+
 
 //optimise solution 
 
