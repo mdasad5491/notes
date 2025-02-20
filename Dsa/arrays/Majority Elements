@@ -1,0 +1,24 @@
+```javascript
+
+/**
+ * @param {number[]} arr
+ * @return {number}
+ */
+var majorityElement = function (arr) {
+    let count = 0;
+    let lastCount = 0;
+    let majElement = -Infinity;
+    for (var i = 0; i < arr.length; i++) {
+        for (var j = 0; j < arr.length; j++) {
+            if (arr[i] == arr[j]) {
+                count++;
+                if (lastCount < count) {
+                    lastCount = count
+                    majElement = arr[i]
+                }
+            }
+        }
+        count = 0;
+    }
+    return majElement;
+};
